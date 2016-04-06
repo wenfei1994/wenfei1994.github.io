@@ -1,0 +1,20 @@
+h1 {
+    font-family: "黑体";
+    font-weight: 600;
+}
+
+p {
+    text-indent: 5em;
+    color: green;
+}
+
+.noindent {
+    text-indent: 0;
+}
+
+#a {
+    line-height: 1.5;
+    text-decoration: line-through;
+    color: red;
+    letter-spacing: 3px;
+}
