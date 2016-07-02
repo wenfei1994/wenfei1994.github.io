@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>CSS变形练习</title>
+    <meta charset='utf-8'>
+    <style>
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: " ";
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    
+    .box {
+        background-color: purple;
+        border-radius: 10px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        color: white;
+        float: left;
+        margin: 50px;
+    }
+    
+    .box1 {
+        transform: rotate(45deg);
+    }
+    
+    .box2 {
+        transform: rotate(-45deg);
+    }
+    
+    .box3 {
+        transform: scale(1.5) rotate(45deg);
+    }
+    
+    .box4 {
+        transform: scale(0.5);
+    }
+    
+    .box5 {
+        transform: scale(0.5, 1.5);
+    }
+    
+    .box6 {
+        transform: translate(50px);
+    }
+    
+    .box7 {
+        transform: translate(50%, 50%);
+    }
+    
+    .box8 {
+        transform: skew(45deg);
+    }
+    
+    .box9 {
+        transform: skewY(45deg);
+    }
+    
+    .box10 {
+        transform: perspective(100px) rotateX(45deg);
+    }
+    
+    .box11 {
+        transform: perspective(1000px) rotateX(45deg);
+    }
+    
+    .box12 {
+        transform: perspective(100px) rotateX(45deg);
+    }
+    
+    .box13 {
+        transform: perspective(100px) rotateY(45deg);
+    }
+    
+    .box14 {
+        transform: perspective(100px) rotateZ(45deg);
+    }
+    </style>
+</head>
+
+<body>
+    <h1>CSS变形练习</h1>
+    <div class="clearfix">
+        <h2>2D旋转</h2>
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+    </div>
+    <div class="clearfix">
+        <h2>2D缩放</h2>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+        <div class="box box5">box 5</div>
+    </div>
+    <div class="clearfix">
+        <h2>2D位移</h2>
+        <div class="box box6">box 6</div>
+        <div class="box box7">box 7</div>
+    </div>
+    <div class="clearfix">
+        <h2>2D倾斜</h2>
+        <div class="box box8">box 8</div>
+        <div class="box box9">box 9</div>
+    </div>
+    <div class="clearfix">
+        <h2>3D透视距离</h2>
+        <div class="box box10">box 10</div>
+        <div class="box box11">box 11</div>
+    </div>
+    <div class="clearfix">
+        <h2>3D旋转</h2>
+        <div class="box box12">box 12</div>
+        <div class="box box13">box 13</div>
+        <div class="box box14">box 14</div>
+    </div>
+</body>
+
+</html>
